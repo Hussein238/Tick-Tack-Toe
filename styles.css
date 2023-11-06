@@ -1,0 +1,67 @@
+
+#container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: 450px;
+    grid-template-rows: auto;
+}
+
+
+
+header{
+    font-size: xx-large;
+    text-align: center;
+  margin: 36px auto;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    
+}
+
+.square{
+    background-color: white;
+    border: 1px solid red;
+    font-size: xx-large;
+}
+.square:disabled{
+    background-color: none;
+}
+
+.winCombo:disabled{
+    color: white;
+    background-color: rgb(82, 82, 235);
+}
+
+ #box0, #box1, #box2{
+border-top: none;
+} 
+#box0,#box3,#box6{
+    border-left: none;
+}
+#box6,#box7,#box8{
+    border-bottom: none;
+}
+#box2,#box5,#box8{
+    border-right: none;
+}
+
+.boardBtns{
+    display: flex;
+ 
+   margin:8px auto;
+}
+
+#startGame, .switchBtn{
+    display: flex;
+  margin: 36px auto;
+}
+
+.checked{
+    color: white;
+    background-color: rgb(82, 82, 235);
+}
